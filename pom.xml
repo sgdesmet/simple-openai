@@ -270,10 +270,12 @@
     <dependency>
       <groupId>io.github.sashirestela</groupId>
       <artifactId>cleverclient</artifactId>
+      <version>${cleverclient.version}</version>
     </dependency>
     <dependency>
       <groupId>io.github.sashirestela</groupId>
       <artifactId>slimvalidator</artifactId>
+      <version>${slimvalidator.version}</version>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
