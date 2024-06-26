@@ -1,6 +1,5 @@
 package io.github.sashirestela.openai.domain.chat;
 
-import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.sashirestela.openai.common.Usage;
@@ -43,8 +42,9 @@ public class Chat {
 
         private Integer index;
 
-        @JsonAlias({ "delta" })
         private ResponseMessage message;
+
+        private ResponseMessage delta;
 
         private String finishReason;
 
