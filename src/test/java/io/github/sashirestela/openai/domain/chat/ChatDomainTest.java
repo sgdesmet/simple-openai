@@ -83,7 +83,7 @@ class ChatDomainTest {
         chatResponse.forEach(responseChunk -> {
             var choices = responseChunk.getChoices();
             if (choices.size() > 0) {
-                var delta = choices.get(0).getMessage();
+                var delta = choices.get(0).getDelta();
                 if (delta.getContent() != null) {
                     System.out.print(delta.getContent());
                 }
