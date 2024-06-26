@@ -42,7 +42,7 @@ public abstract class BaseSimpleOpenAI {
     protected OpenAIBeta2.VectorStoreFiles vectorStoreFileService;
     protected OpenAIBeta2.VectorStoreFileBatches vectorStoreFileBatchService;
 
-    BaseSimpleOpenAI(@NonNull BaseSimpleOpenAIArgs args) {
+    protected BaseSimpleOpenAI(@NonNull BaseSimpleOpenAIArgs args) {
         var httpClient = Optional.ofNullable(args.getHttpClient()).orElse(HttpClient.newHttpClient());
         Consumer<Object> bodyInspector = body -> {
             var validator = new Validator();
